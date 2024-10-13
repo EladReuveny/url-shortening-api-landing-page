@@ -1,0 +1,123 @@
+:root {
+  /* Layout */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  /* Primary Colors */
+  --primary-cyan: hsl(180, 66%, 49%);
+  --primary-dark-violet: hsl(257, 27%, 26%);
+  --primary-white: hsl(0, 0%, 100%);
+
+  /* Secondary Colors */
+  --secondary-red: hsl(0, 87%, 67%);
+
+  /* Neutral Colors */
+  --neutral-gray: hsl(0, 0%, 75%);
+  --neutral-grayish-violet: hsl(257, 7%, 63%);
+  --neutral-very-dark-blue: hsl(255, 11%, 22%);
+  --neutral-very-dark-violet: hsl(260, 8%, 14%);
+
+  /* Typography */
+  --font-body-size: 18px;
+  --font-family: "Poppins", sans-serif;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+html {
+  line-height: 1.15;
+}
+body {
+  font-size: var(--font-body-size);
+  font-weight: var(--font-weight-regular);
+  overflow: auto;
+  height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+p {
+  margin: 0 0 1rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Header */
+header {
+  margin: 40px 100px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 40px 50px; */
+}
+header .nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+header .nav__links .logo {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+header .nav__links li:not(:first-child) {
+  color: var(--neutral-grayish-violet);
+  font-size: 1rem;
+}
+header .nav__buttons {
+  display: flex;
+  gap: 20px;
+}
+header .nav__buttons .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: none;
+}
+header .nav__buttons .btn--secondary {
+  color: var(--primary-dark-violet);
+}
+header .nav__buttons .btn--primary {
+  background: var(--primary-cyan);
+  color: var(--primary-white);
+}
