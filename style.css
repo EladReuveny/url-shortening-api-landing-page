@@ -329,7 +329,7 @@ header .hamburger {
 
 /* Media Queries */
 @media (max-width: 450px) {
-  /* header .hamburger {
+  header .hamburger {
     display: block;
     position: absolute;
     top: 40px;
@@ -343,6 +343,8 @@ header .hamburger {
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     top: 60px;
     left: 0;
     background: var(--primary-dark-violet);
@@ -351,7 +353,8 @@ header .hamburger {
   }
   header .nav__links.active li:first-child img {
     display: none;
-  } */
+  }
+
   .get-started {
     flex-direction: column-reverse;
     align-items: center;

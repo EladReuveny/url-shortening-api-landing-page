@@ -17,10 +17,4 @@ const navLinks = document.querySelector(".nav__links");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
-
-  if (navLinks.classList.contains("active")) {
-    hamburger.innerHTML = '<div class="close-icon">&times;</div>';
-  } else {
-    hamburger.innerHTML = '<div class="hamburger" id="hamburger">&#9776;</div>';
-  }
 });
